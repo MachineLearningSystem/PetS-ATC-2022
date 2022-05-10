@@ -3,8 +3,6 @@
 
 PetS is a unified inference serving framework for parameter-efficient transformers. This prototype is developed based on [TurboTransformers](https://github.com/Tencent/TurboTransformers).
 
-Clone this project: `git clone git@github.com:PKUZHOU/PetS.git`
-
 ## Overview
 [1. Project Structure](#1-project-structure)  
 [2. Getting Started](#2-getting-started) (5 human-minutes + 20 compute-minutes)  
