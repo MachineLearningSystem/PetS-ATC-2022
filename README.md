@@ -285,7 +285,7 @@ A PET algorithm can work with PetS as long as it meets two requirements:
 
 * The separated  PET operations are **light-weighted**. 
 
-To support a new algorithm, we should first identify its PET operations. Then the related functions should be extended accordingly. For example, a [LoRA](https://arxiv.org/abs/2106.09685) algorithm has a formula: $Y_t = X_t*W + s*X_tW_{down}W_{up}$. Its PET operation is  a scaled dense MVM: $s*X_tW_{down}W_{up}$, which should be implemented as a new PET operator. 
+To support a new algorithm, we should first identify its PET operations. Then the related functions should be extended accordingly. For example, a [LoRA](https://arxiv.org/abs/2106.09685) algorithm has a formula: Y_t = X_t*W + s*X_tW_{down}W_{up}. Its PET operation is  a scaled dense MVM: s*X_tW_{down}W_{up}, which should be implemented as a new PET operator. 
 
 
 After knowing the PET operations, three steps are required to add the new PET algorithm to PetS:
